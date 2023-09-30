@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="icon" type="image/x-icon" href="C:\Users\RAHUL\Downloads\google.jpeg">
+    <link rel="stylesheet" href="C:\Users\RAHUL\OneDrive\Desktop\coding\c++\HTML\project_google.css">
+</head>
+<body>
+    <header>
+    <nav>
+        <ul>
+            <li><a class="text" href=#>Gmail</a></li>
+            <li><a class="text" href=#>Images</a></li>
+            <li class="menu"><img class="menu-button" alt="menu" src="C:\Users\RAHUL\OneDrive\Pictures\menu.png"></li>
+            <li><img class="Profile" src="C:\Users\RAHUL\OneDrive\Pictures\web.png" alt="Profile" ></li>
+        </ul>
+        <img src="C:\Users\RAHUL\Downloads\dark.png" alt="dark-mode" id="icon">
+    </nav>
+    </header>
+    <div class="search-bar">
+        <h1 id="logo"><span class="first">G</span><span class="second">o</span><span class="third">o</span><span class="fourth">g</span><span class="fifth">l</span><span class="sixth">e</span></h1>
+        
+        <form>
+            <img class="audio" src="C:\Users\RAHUL\Downloads\image-removebg-preview (1).png" alt="audio">
+            <img class="search" src="C:\Users\RAHUL\Downloads\image-removebg-preview.png" alt="search-option">
+            <img class="camera" src="C:\Users\RAHUL\Downloads\image-removebg-preview (2).png" alt="image-search">
+            <!-- <div class="bar"> -->
+            <input type="text">
+            <!-- </div> -->
+            <div class="options">
+                <button class="design">Google Search</button>
+                <button class="design">I'm feeling lucky</button>
+            </div>
+        </form>
+        <footer class="foot">
+            <p class="alignl">&emsp;Advertising &emsp;  About&emsp;</p>
+            <p class="alignr">&emsp;Privacy &emsp;  Terms   &emsp; Settings&emsp;</p>
+        </footer>
+    </div>
+<script>
+    var icon = document.getElementById("icon");
+    icon.onclick = function(){
+        document.body.classList.toggle("dark-theme");
+        if (document.body.classList.contains("dark-theme")){
+            icon.src = "C:\\Users\\RAHUL\\Downloads\\bright.png";
+        }else{
+            icon.src = "C:\\Users\\RAHUL\\Downloads\\dark.png";
+        }
+    }
+</script>
+</body>
+</html>
